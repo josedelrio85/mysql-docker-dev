@@ -10,10 +10,10 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root_bsc
-      MYSQL_DATABASE: leads
-      MYSQL_PASSWORD: root_bsc
-      MYSQL_USER: root_bsc
+      MYSQL_ROOT_PASSWORD: root_pass
+      MYSQL_DATABASE: database
+      MYSQL_PASSWORD: root_pass
+      MYSQL_USER: admin
     networks:
       - mariadb-development
 
