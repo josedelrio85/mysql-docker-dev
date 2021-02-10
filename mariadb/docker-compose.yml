@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mariadb:
+    image: mariadb:10.2
+    #command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+    command: ['--innodb_log_file_size=512M', '--innodb_strict_mode=0']
+    ports:
+      - 3311:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_bsc
+      MYSQL_DATABASE: leads
+      MYSQL_PASSWORD: root_bsc
+      MYSQL_USER: root_bsc
+    networks:
+      - mariadb-development
+
+networks:
+  mariadb-development:
