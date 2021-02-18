@@ -1,4 +1,4 @@
-# MySQL Development
+# MySQL Development 
 
 * Run a MySQL docker image to deploy a local development MySQL instance.
 
