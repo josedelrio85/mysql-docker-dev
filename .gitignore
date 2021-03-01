@@ -1,1 +1,3 @@
-mysql/mysql/*
+mysql/mysql8/mysql
+mysql/mysql5.7/mysql
+mariadb/mysql
